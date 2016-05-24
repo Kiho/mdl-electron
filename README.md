@@ -8,6 +8,10 @@ It's based on this great article:
 
 https://medium.com/developers-writing/building-a-desktop-application-with-electron-204203eeb658#.t806hbl37
 
+# TypeScript
+
+https://templecoding.com/blog/2015/12/11/using-react-typescript-webpack-and-visual-studio/
+
 # Developing
 
 If you're developing, do this:

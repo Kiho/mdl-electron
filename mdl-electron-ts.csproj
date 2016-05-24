@@ -23,6 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="css\styles.css" />
     <Content Include="index.html" />
     <Content Include="webpack.config.js" />
     <TypeScriptCompile Include="src\components\demo-charts.tsx" />
@@ -72,7 +73,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="css\" />
     <Folder Include="dist\" />
   </ItemGroup>
   <PropertyGroup>
