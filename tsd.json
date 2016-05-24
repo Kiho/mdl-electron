@@ -5,15 +5,6 @@
   "path": "typings",
   "bundle": "typings/tsd.d.ts",
   "installed": {
-    "react-router/history.d.ts": {
-      "commit": "e69daec7f79c0c25c4653f866e5cadb5bb7a01ca"
-    },
-    "react-router/react-router.d.ts": {
-      "commit": "e69daec7f79c0c25c4653f866e5cadb5bb7a01ca"
-    },
-    "react/react.d.ts": {
-      "commit": "e69daec7f79c0c25c4653f866e5cadb5bb7a01ca"
-    },
     "jquery/jquery.d.ts": {
       "commit": "a5c07a6098b3b934380c13bb575d4ea5f3d73ffd"
     }

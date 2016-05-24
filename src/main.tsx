@@ -17,9 +17,9 @@ import NotFound from "./containers/not-found";
     //require("babel-polyfill");
 
     // Set up Router object
-    var Route = Route.Route;
-    var DefaultRoute = Route.DefaultRoute;
-    var NotFoundRoute = Route.NotFoundRoute;
+    var Route = Router.Route;
+    var DefaultRoute = Router.DefaultRoute;
+    var NotFoundRoute = Router.NotFoundRoute;
 
     // Declare routes
 
@@ -34,7 +34,7 @@ import NotFound from "./containers/not-found";
         </Route>
     );
 
-    Route.run(routes, function (Handler, state) {
+    Router.run(routes, function (Handler, state) {
         var params = state.params;
         ReactDOM.render(<Handler params={params} />, document.getElementById('app'));
     });
