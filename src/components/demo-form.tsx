@@ -1,7 +1,7 @@
-var React = require('react')
-var $ = require('jquery')
+import * as React from 'react';
+import * as $ from 'jquery';
 
-module.exports = React.createClass({
+export default React.createClass({
   getInitialState: function() {
    return {
      Username: "",
@@ -21,7 +21,7 @@ module.exports = React.createClass({
     // This fetches some data using jquery and sets the default values in the component's local state
     // In theory, this should all be done with Flux/redux, but man, does this Javasctipt framework
     // clusterfuck *ever* end?  How do people stand it?
-    handle = this
+    let handle = this
     $.ajax({
       type: "GET",
       url: "https://raw.githubusercontent.com/odewahn/mdl-react-golang/master/backend/public/data.json",
@@ -40,7 +40,7 @@ module.exports = React.createClass({
     //  https://github.com/google/material-design-lite/issues/871
     //  http://quaintous.com/2015/07/09/react-components-with-mdl/
     //
-    window.componentHandler.upgradeDom();
+      (window as any).componentHandler.upgradeDom();
   },
   render: function() {
     return (
@@ -68,6 +68,5 @@ module.exports = React.createClass({
         </div>
       </div>
     )
-
   }
 })

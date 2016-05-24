@@ -1,4 +1,8 @@
 node_modules
-bundle.js
+dist/bundle.js
+build/js/
 .DS_Store
 npm-debug.log
+bin/
+obj/
+

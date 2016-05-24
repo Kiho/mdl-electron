@@ -1,9 +1,9 @@
-var app = require('app');
+﻿var app = require('app');
 var BrowserWindow = require('browser-window');
 
 var mainWindow = null;
 
-app.on('ready', function() {
+app.on('ready', function () {
 
     mainWindow = new BrowserWindow({
         width: 1200,
@@ -11,5 +11,4 @@ app.on('ready', function() {
     });
 
     mainWindow.loadUrl('file://' + __dirname + '/index.html');
-
 });
