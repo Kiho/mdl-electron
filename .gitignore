@@ -1,8 +1,18 @@
 node_modules
-dist/bundle.js
-build/js/
 .DS_Store
 npm-debug.log
-bin/
 obj/
 *.suo
+[Bb]in
+[Dd]ebug*/
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+**/dist/*
+**/build/js/*
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config
