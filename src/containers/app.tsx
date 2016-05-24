@@ -1,17 +1,14 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-
-// Router
-import {Link} from "react-router";
 import * as Router from "react-router";
-
-var RouteHandler = Router.RouteHandler;
 
 import Header from '../components/header';
 import HeaderAvatar from '../components/header-avatar';
 import Nav from '../components/nav';
 
 import DemoCharts from "./charts";
+
+const RouteHandler = Router.RouteHandler;
 
 // Component
 export default React.createClass({
