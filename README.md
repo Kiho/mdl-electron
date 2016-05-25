@@ -18,7 +18,9 @@ If you're developing, do this:
 
 * Clone the repo
 * Run `npm install`
-* Run `npm start`
+* Open mdl-electron.sln in Visual Studio 2015
+* Run `webpack` in Task Runner
+* Run `electron` in Task Runner
 
 # Making the electron app
 
