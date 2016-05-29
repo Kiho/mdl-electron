@@ -7,8 +7,9 @@
         "sourceMap": true,
         "experimentalDecorators": true
     },
-    "files": [
-        "./typings/tsd.d.ts",
-        "./src/main.tsx"
-    ]
+  "files": [
+    "./typings/tsd.d.ts",
+    "./src/main.tsx"
+  ],
+  "exclude": ["node_moduels"]
 }

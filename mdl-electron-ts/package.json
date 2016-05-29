@@ -4,23 +4,30 @@
   "version": "0.1.0",
   "description": "TypeScript version of mdl-electron",
   "main": "app.js",
-    "scripts": {
-        "webpack": "webpack -w",
-        "start": "npm run webpack & npm run electron",
-        "electron": "electron .",
-        "package": "electron-packager ./ MDLElecton --platform=darwin --arch=x64  --out ~/Desktop/MDLElecton --version 0.30.2 --overwrite"
-    },
+  "scripts": {
+    "webpack": "webpack -w",
+    "start": "npm run webpack & npm run electron",
+    "electron": "electron .",
+    "package": "electron-packager ./ MDLElecton --platform=darwin --arch=x64  --out ~/Desktop/MDLElecton --version 0.30.2 --overwrite"
+  },
+  "keywords": [
+    "typescript",
+    "react",
+    "mdl",
+    "electron"
+  ],
   "dependencies": {
     "jquery": "^2.2.2",
     "react": "^0.14.3",
     "react-chartist": "^0.10.1",
     "react-dom": "^0.14.3",
-    "react-router": "0.13"
+    "react-router": "0.13",
+    "mdl-react-ts": "^0.1.0"
   },
   "devDependencies": {
     "webpack": "^1.12.14",
-    "ts-loader": "~0.8.1",
-    "typescript": "~1.8.9",
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.9",
     "electron-packager": "^5.2.1",
     "electron-prebuilt": "^0.30.3"
   }

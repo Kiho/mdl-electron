@@ -15,3 +15,4 @@
 /// <reference path="react-router/react-router.d.ts" />
 /// <reference path="jquery/jquery.d.ts" />
 /// <reference path="react-chartist/react-chartist.d.ts" />
+/// <reference path="../node_modules/mdl-react-ts/js/mdl-react.d.ts" />

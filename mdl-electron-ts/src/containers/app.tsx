@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as Router from "react-router";
 
+import { Layout, Drawer, Content, Textfield, Menu, MenuItem, IconButton, Align } from 'mdl-react-ts';
 import Header from '../components/header';
 import HeaderAvatar from '../components/header-avatar';
 import Nav from '../components/nav';
@@ -12,23 +13,23 @@ const RouteHandler = Router.RouteHandler;
 
 // Component
 export default React.createClass({
-  render: function () {
-    return (
-      <div>
-        <div className="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-          <Header />
-          <div className="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-            <HeaderAvatar />
-            <Nav />
-          </div>
-          <main className="mdl-layout__content mdl-color--grey-100">
-            <div className="mdl-grid demo-content">
-              <RouteHandler {...this.props} />
+    render: function () {
+        return (
+            <div>
+                <Layout className="demo-layout" fixedHeader={true} fixedDrawer={true}>
+                    <Header />
+                    <Drawer className="demo-drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+                        <HeaderAvatar />
+                        <Nav />
+                    </Drawer>
+                    <Content className="mdl-color--grey-100">
+                        <div className="mdl-grid demo-content">
+                            <RouteHandler {...this.props} />
+                        </div>
+                    </Content>
+                </Layout>
             </div>
-          </main>
-        </div>
-      </div>
-    );
-  }
+        );
+    }
 });
 
